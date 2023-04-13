@@ -1,0 +1,52 @@
+.carousel {
+  overflow: hidden;
+  width: 100%;
+  position: relative;
+  display: flex;
+}
+
+.container-carousel {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+}
+
+.inner-carousel {
+  display: flex;
+  white-space: nowrap;
+  width: 100%;
+  transition: all 500ms cubic-bezier(0.09, 0.79, 0.155, 0.915);
+}
+
+.inner-carousel:active {
+  cursor: -webkit-grabbing;
+  cursor: grabbing;
+}
+
+.inner-carousel-item {
+  display: flex;
+  max-width: 100%;
+  align-items: center;
+  justify-content: center;
+
+  flex: 1 0 auto;
+  cursor: pointer;
+}
+
+.button {
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.arrow {
+  cursor: pointer;
+  width: 30px;
+  justify-self: center;
+  align-self: center;
+}
+
+img {
+  height: auto;
+}
